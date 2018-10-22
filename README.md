@@ -11,5 +11,5 @@ $ sudo docker run -d -p80:80 -p443:443 --name=sample-web makocchi/docker-nginx-h
 
 ```bash
 $ openssl genrsa -out ssl.key 2048
-# openssl req -x509 -new -nodes -key ssl.key -days 10000 -out ssl.crt -subj "/CN=makocchi.com"
+$ openssl req -x509 -new -nodes -key ssl.key -days 10000 -out ssl.crt -subj "/CN=makocchi.com"
 ```
