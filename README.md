@@ -1,3 +1,6 @@
+[![makocchi/docker-nginx-hostname](https://shields.beevelop.com/docker/image/image-size/makocchi/docker-nginx-hostname/latest.svg)]()
+[![makocchi/docker-nginx-hostname](https://shields.beevelop.com/docker/image/layers/makocchi/docker-nginx-hostname/latest.svg)]()
+
 # docker-nginx-hostname
 Nginx image that shows container's hostname
 
