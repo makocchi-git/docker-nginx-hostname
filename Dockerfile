@@ -1,7 +1,7 @@
-FROM alpine:3.5
+FROM alpine:3.9
 
 RUN apk add -u --no-cache nginx nginx-mod-http-echo
-RUN mkdir /run/nginx/
+RUN mkdir -p /run/nginx/ /usr/share/nginx/html
 
 COPY files/etc/nginx/conf.d /etc/nginx/conf.d/
 
