@@ -2,7 +2,7 @@
 [![makocchi/docker-nginx-hostname](https://shields.beevelop.com/docker/image/layers/makocchi/docker-nginx-hostname/latest.svg)]()
 
 # docker-nginx-hostname
-Nginx image that shows container's hostname
+Nginx image that shows container's hostname.
 
 # Usage
 
@@ -12,7 +12,10 @@ $ sudo docker run -d -p80:80 -p443:443 --name=sample-web makocchi/docker-nginx-h
 
 ## make ssl.key and ssl.crt
 
+Make your ssl cert.
+
 ```bash
 $ openssl genrsa -out ssl.key 2048
 $ openssl req -x509 -new -nodes -key ssl.key -days 10000 -out ssl.crt -subj "/CN=makocchi.com"
+$ cp ssl.key ssl.crt files/etc/nginx/conf.d/.
 ```
